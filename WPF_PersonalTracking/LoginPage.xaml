@@ -1,0 +1,27 @@
+﻿<Window x:Class="WPF_PersonalTracking.LoginPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_PersonalTracking"
+        mc:Ignorable="d"
+        Title="LoginPage" FontWeight="Bold" Height="200" Width="350" WindowStartupLocation="CenterScreen" Background="BlanchedAlmond" Icon="/Login.png" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Userno" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtUserno" Grid.Column="1" Width="150" HorizontalAlignment="Left" VerticalAlignment="Center" PreviewTextInput="txtUserno_PreviewTextInput"/>
+        <Label Content="Password" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1"/>
+        <TextBox x:Name="txtPassword" Grid.Column="1" Width="150" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="1"/>
+        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Center" Height="30" Grid.Row="2" VerticalAlignment="Center" Width="76" Click="btnLogin_Click"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Center" Height="30" Grid.Row="2" VerticalAlignment="Center" Width="76" Grid.Column="1" Click="btnExit_Click"/>
+    </Grid>
+</Window>

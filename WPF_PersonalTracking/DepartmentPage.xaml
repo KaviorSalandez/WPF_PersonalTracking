@@ -1,0 +1,23 @@
+﻿<Window x:Class="WPF_PersonalTracking.DepartmentPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_PersonalTracking"
+        mc:Ignorable="d"
+        Title="DepartmentPage" Height="300" Width="350" Background="#FF97CCE2" WindowStartupLocation="CenterScreen" Icon="/Department.png" ResizeMode="NoResize" FontSize="18" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Department Name" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtDepartmentName" Grid.Column="1" Width="150" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Button x:Name="buttonSave" Content="Save" Grid.Row="1" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="50,0,0,0" Click="buttonSave_Click"></Button>
+        <Button x:Name="btnClose" Grid.Column="1" Content="Close" Width="100" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Margin="0,0,50,0" Click="Button_Click"/>
+    </Grid>
+</Window>
